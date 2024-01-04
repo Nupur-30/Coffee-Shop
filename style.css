@@ -1,0 +1,61 @@
+:root { /* Define custom variables */
+  --main-color: #6b3f09; /* A custom variable for the main color */
+  --black: #13131a; /* A custom variable for the color black */
+  --bg: #402d12; /* A custom variable for background color */
+  --border: 0.5rem solid rgba(255, 255, 255, 0); /* A custom variable for border properties */
+}
+
+html {
+    font-size: 62.5%; /* Setting the base font size to 62.5% of the default */
+    overflow-x: hidden; /* Hiding horizontal overflow content */
+    overflow-y: auto;
+    scroll-padding-top: 9rem; 
+    scroll-behavior: smooth; /* Setting smooth scrolling behavior */
+  }
+  
+  /* Styling the scrollbar */
+html::-webkit-scrollbar {
+    width: .8rem;
+  }
+  
+html::-webkit-scrollbar-track {
+    background: transparent; /* Styling the scrollbar track with a transparent background */
+  }
+  
+html::-webkit-scrollbar-thumb {
+    background: #fff; /* Styling the scrollbar thumb with a white background */
+    border-radius: .5rem; 
+  }
+
+body{
+    /* background-color: var(--bg); */
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box ;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+}
+
+.navbar .logo{
+    background-image: url('Images/logo.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}

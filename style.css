@@ -123,7 +123,7 @@ html::-webkit-scrollbar-thumb {
 
 .navbar-2 .nav-links a{
     color: #31271c;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 900;
     margin: 0 1rem;
     letter-spacing: 0.1rem;
@@ -210,7 +210,6 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .cart-item{
@@ -284,7 +283,7 @@ html::-webkit-scrollbar-thumb {
 /* home */
 
 .home{
-    background-image: url('Images/home-3.avif');
+    background-image: url('Images/home-1.avif');
     height: 75vh;
     background-size: cover;
     text-align: center;
@@ -311,7 +310,6 @@ html::-webkit-scrollbar-thumb {
     font-weight: 100;
     font-size: 2rem;
     margin-top: 1.2rem;
-
 }
 
 .home-content button{
@@ -330,38 +328,24 @@ html::-webkit-scrollbar-thumb {
 }
 
 .info-content{
-    padding: 6% 5% 0 5%;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .info-box{
-    width: 47%;
+    width: 30%;
     height: auto;
 }
 
 .info-image{
     width: 100%;
     height: 250px;
-    opacity: 0.9;
 }
 
-#image-1{
-    background-image: url('Images/info-image-1.jpeg');
-    background-size: cover;
-}
-
-#image-1:hover{
-    opacity: 1;
-}
-
-#image-2:hover{
-    opacity: 1;
-}
-
-#image-2{
-    background-image: url('Images/home-5.avif');
-    background-size: cover;
+.image-container{
+    background-color: black;
 }
 
 .info-heading{
@@ -453,6 +437,7 @@ html::-webkit-scrollbar-thumb {
     height: 80%; 
     margin-bottom: 5%;
     width: 100%;
+    z-index: 2;
   }
 
 .menu-container{
@@ -532,11 +517,102 @@ html::-webkit-scrollbar-thumb {
 }
 
 .collage{
-    position: absolute;
+    height: 45lh;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: black;
+}
+
+.collage .sec-1{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.collage .sec-1 .row-1{
+    width: 100%;
+    height: 50%;
+}
+
+.collage .sec-1 .row-2{
+    width: 100%;
+    height: 50%;
+}
+
+.sec-1 .row{
+    display: flex;
+}
+
+.sec-1 .row-1 .img{
+    width: 50%;
+    height: 100%;
+}
+
+.sec-1 .row-2 .img{
+    width: 50%;
+    height: 100%;
+}
+
+.collage .sec-2{
+    width: 30%;
+    height: 100%;
+}
+
+.collage .sec-3{
+    width: 30%;
+    height: 100%;
+}
+
+.sec-3 .row{
+    height: 50%;
+    width: 100%;
+}
+
+.img:hover{
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+    /* Styles for tablets or smaller screens */
+    /* For example: adjust font sizes, margins, or reduce column widths */
+  }
   
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    /* For example: stack elements vertically, adjust padding, or reduce font sizes */
+  }
+  
+  /* Media query for smaller mobile devices */
+  @media screen and (max-width: 480px) {
+    /* Styles for smaller mobile devices */
+    /* For example: further adjust padding, font sizes, or hide certain elements */
+  }
+
 
 
 
